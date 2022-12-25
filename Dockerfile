@@ -4,7 +4,7 @@ RUN sudo apt-get update && apt-get install -y mariadb-connector-c
 RUN sudo apt install libmariadb3 libmariadb-dev
 RUN sudo apt-install mariadb-server
 RUN sudo service mariadb enable
-ENV MARIADB_CONFIG /usr/bin/mariadb_config
+# ENV MARIADB_CONFIG /usr/bin/mariadb_config
 
 # start by pulling the python image
 FROM python:3.10-alpine
